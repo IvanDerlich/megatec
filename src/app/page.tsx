@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const sections = [
   { id: 'productos', label: 'Productos' },
@@ -47,7 +48,7 @@ export default function Home() {
       {/* Secciones */}
       <section id="productos" style={{ padding: '80px 0 40px', maxWidth: 900, margin: '0 auto' }}>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center', flexWrap: 'wrap' }}>
-          <img src={stockImages.productos} alt="Productos tecnología" style={{ width: 320, height: 200, objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
+          <Image src={stockImages.productos} alt="Productos tecnología" width={320} height={200} style={{ objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
           <div style={{ flex: 1, minWidth: 220 }}>
             <h2>Productos</h2>
             <p style={{ fontSize: '1.2rem', lineHeight: 1.7 }}>Ofrecemos sistemas de seguridad para <b>vehículos</b>, <b>residencias</b>, <b>comercios</b> e <b>industrias</b>, adaptados a las necesidades de cada cliente.</p>
@@ -67,12 +68,12 @@ export default function Home() {
             </ul>
             <button className="btn">Solicitar servicio</button>
           </div>
-          <img src={stockImages.servicios} alt="Servicios soporte" style={{ width: 320, height: 200, objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
+          <Image src={stockImages.servicios} alt="Servicios soporte" width={320} height={200} style={{ objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
         </div>
       </section>
       <section id="quienes-somos" style={{ padding: '40px 0', maxWidth: 900, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center', flexWrap: 'wrap' }}>
-          <img src={stockImages.quienes} alt="Equipo de trabajo" style={{ width: 220, height: 180, objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
+          <Image src={stockImages.quienes} alt="Equipo de trabajo" width={220} height={180} style={{ objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
           <div style={{ flex: 1, minWidth: 220 }}>
             <h2>Quiénes somos</h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.7, maxWidth: 700 }}>
@@ -123,18 +124,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <img src={stockImages.ejemplos} alt="Familia protegida" style={{ width: 320, height: 200, objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
+          <Image src={stockImages.ejemplos} alt="Familia protegida" width={320} height={200} style={{ objectFit: 'cover', borderRadius: 16, boxShadow: '0 4px 24px #0046ad22' }} />
         </div>
       </section>
       <section id="opiniones" style={{ padding: '40px 0 80px', maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
         <h2>Opiniones de usuarios</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'center' }}>
-          <img src={stockImages.opiniones} alt="Cliente feliz" style={{ width: 120, height: 120, objectFit: 'cover', borderRadius: '50%', boxShadow: '0 4px 24px #0046ad22', marginBottom: 16 }} />
+          <Image src={stockImages.opiniones} alt="Cliente feliz" width={120} height={120} style={{ objectFit: 'cover', borderRadius: '50%', boxShadow: '0 4px 24px #0046ad22', marginBottom: 16 }} />
           <blockquote style={{ background: 'var(--gris-x28)', borderLeft: '6px solid var(--amarillo-x28)', padding: '1em 2em', borderRadius: 8, maxWidth: 500, fontStyle: 'italic' }}>
-            "Excelente atención y productos de calidad."
+            &quot;Excelente atención y productos de calidad.&quot;
           </blockquote>
           <blockquote style={{ background: 'var(--gris-x28)', borderLeft: '6px solid var(--azul-x28)', padding: '1em 2em', borderRadius: 8, maxWidth: 500, fontStyle: 'italic' }}>
-            "Muy conforme con el servicio de monitoreo."
+            &quot;Muy conforme con el servicio de monitoreo.&quot;
           </blockquote>
         </div>
       </section>
